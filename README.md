@@ -58,21 +58,21 @@ Copy or serve the two JS files in your HTML page:
 
 Example in your HTML:
 
-```/dev/null/index.html#L1-12
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My App</title>
-</head>
-<body>
-  <div id="alert-container"></div>
-  <div id="content">Loading…</div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My App</title>
+  </head>
+  <body>
+    <div id="alert-container"></div>
+    <div id="content">Loading…</div>
 
-  <script type="module" src="/path/to/loader.js"></script>
-  <script type="module" src="/path/to/swapeteer.js"></script>
-  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
-</body>
+    <script type="module" src="/path/to/loader.js"></script>
+    <script type="module" src="/path/to/swapeteer.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  </body>
 </html>
 ```
 
@@ -209,7 +209,7 @@ In HTML:
 
 In `/js/handlers.js`:
 
-```/dev/null/js/handlers.js#L1-6
+```js
 export async function onClick(name) {
   // you could fetch more data, then trigger a swap via HTMX headers
   console.log("Hello, " + name);
